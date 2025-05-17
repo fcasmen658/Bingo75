@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'org.programacion.iesalandalus'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    // Repositorio jitpack.io donde están los accesos a las versiones de la librería entrada desde github
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    // Entrada para que el repositorio jitpack.io sepa acceder a la localización de librería entrada
+    implementation 'com.github.JRJimenezReyes:entrada:1.0.3'
+
+    // MogoDB Driver
+    implementation 'org.mongodb:mongodb-driver-sync:4.4.2'
+
+    // JavaFX
+    implementation 'org.openjfx:javafx-controls:23.0.1'
+    implementation 'org.openjfx:javafx-fxml:23.0.1'
+    implementation 'org.openjfx:javafx-base:23.0.1'
+    implementation 'org.openjfx:javafx-graphics:23.0.1'
+    implementation 'org.openjfx:javafx-web:23.0.1'
+    implementation 'org.openjfx:javafx-swing:23.0.1'
+    implementation 'org.openjfx:javafx-media:23.0.1'
+    implementation 'org.openjfx:javafx-web:23.0.1'
+
+}
+
+javafx {
+    version = "23.0.1"
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.base', 'javafx.graphics', 'javafx.web', 'javafx.swing', 'javafx.media', 'javafx.web' ]
+}
+
+application {
+    mainClass = 'org.iesalandalus.programacion.matriculacion.MainApp' // Cambia esto por tu clase principal
+}
+
+test {
+    useJUnitPlatform()
+}
