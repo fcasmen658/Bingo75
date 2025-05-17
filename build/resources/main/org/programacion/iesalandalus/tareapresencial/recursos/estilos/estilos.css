@@ -1,0 +1,24 @@
+.BorderPane {
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-size: 900 700;
+    -fx-border-color: #121363;
+}
+.Button {
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-width:3;
+}
+
+
+/* Campos de texto o DatePicker con error */
+.text-field:error,
+.date-picker:error {
+    -fx-border-color: red;
+    -fx-border-width: 2px;
+}
+
+/* Campos de texto o DatePicker correctos */
+.text-field:ok,
+.date-picker:ok {
+    -fx-border-color: green;
+    -fx-border-width: 2px;
+}

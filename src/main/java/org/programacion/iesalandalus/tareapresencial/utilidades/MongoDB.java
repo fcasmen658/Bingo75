@@ -13,12 +13,11 @@ import org.bson.Document;
 
 public class MongoDB {
 
-    //private static final String SERVIDOR = "cluster0.uyprv4n.mongodb.net";
-    private static final String SERVIDOR = "cluster0.2bzztyn.mongodb.net";
+    private static final String SERVIDOR = "Aquí va el servidor";
     private static final int PUERTO = 27017; //TODO: 27017 no se utiliza
     private static final String BD = "bingo75";
-    private static final String USUARIO = "fcasmen658";
-    private static final String CONTRASENA = "27194575Ll**..";
+    private static final String USUARIO = "Aquí va el usuario";
+    private static final String CONTRASENA = "Aquí va la contraseña";
 
 
     private static final String NOMBRE = "nombre";
